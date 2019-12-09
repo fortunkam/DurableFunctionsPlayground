@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "durableTask": {
+    "storageProvider": {
+      "controlQueueBatchSize": 32,
+      "partitionCount": 16,
+      "controlQueueVisibilityTimeout": "00:01:00",
+      "workItemQueueVisibilityTimeout": "00:00:01",
+      "maxQueuePollingInterval": "00:00:05"
+    },
+    "maxConcurrentActivityFunctions": 10,
+    "maxConcurrentOrchestratorFunctions": 10,
+    "extendedSessionsEnabled": false,
+    "extendedSessionIdleTimeoutInSeconds": 30
+  }
+}
